@@ -46,7 +46,7 @@ public class SpringbootRabbitmqTest {
         user.setId("1");
         user.setName("Fanout");
         fanoutSender.send(user);
-        //再次获取试试
+        //再次获取试试看看
         System.out.println("try again:");
         fanoutReceiver.receiveFanout1(user);
     }
